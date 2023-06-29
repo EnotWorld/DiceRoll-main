@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <div>
+      <h1>Симулятор 'Бросок кубика'</h1>
+      <br />
+      <div class="inputs">
+        <div class="col-sm-3">
+          <p>
+            Сколько граней у ваших костей?
+            <br />
+            <span>(2-20)</span>
+          </p>
+          <input type="number" min="2" max="20" id="sides" />
+        </div>
+        <div class="col-sm-3">
+          <p>
+            Сколько кубиков вы хотите бросить?
+            <br />
+            <span>(1-10)</span>
+          </p>
+          <input type="number" min="1" max="10" id="dices" />
+        </div>
+        <div class="col-sm-3">
+          <p>
+            Сколько раз вы хотите бросить?
+
+            <br />
+            <span>(1-50)</span>
+          </p>
+          <input type="number" min="1" max="10" id="rolls" />
+        </div>
+      </div>
+      <br /><br />
+      <button id="roll_btn" type="button" class="btn btn-info button">
+        ROLL!
+      </button>
+      <br /><br />
+      <div id="results" class="inputs">
+        <div class="col-sm-3">
+          <p>
+            Сумма
+            <br />
+            <span id="sum">---</span>
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <p>
+            Среднее значение костей
+            <br />
+            <span id="avg">---</span>
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <p>
+            Самый высокий бросок
+            <br />
+            <span id="max_sum">---</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/js.js"></script>
+  </body>
+</html>
